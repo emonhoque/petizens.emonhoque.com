@@ -1,0 +1,65 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d4d4d4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(109, 109, 109);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(49, 49, 49);
+}
+
+@media (prefers-color-scheme: no-preference) {
+  .here:visited {
+    text-decoration: none;
+    color: #b0b0b0;
+  }
+  .here:hover {
+    text-decoration: none;
+    color: #b0b0b0;
+  }
+  .here:focus {
+    text-decoration: none;
+    color: #b0b0b0;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .here:visited {
+    text-decoration: none;
+    color: #b0b0b0;
+  }
+  .here:hover {
+    text-decoration: none;
+    color: #b0b0b0;
+  }
+  .here:focus {
+    text-decoration: none;
+    color: #b0b0b0;
+  }
+}
+
+@media (prefers-color-scheme: no-preference) {
+  body {
+    background-color: #383838;
+    color: whitesmoke;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #383838;
+    color: whitesmoke;
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #e6e4e4;
+    color: black;
+  }
+}

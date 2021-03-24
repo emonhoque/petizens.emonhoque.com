@@ -1,0 +1,24 @@
+Options -MultiViews
+
+ErrorDocument 404 /error
+ErrorDocument 502 /error
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^(?!\/api\/)(.+)\/$
+RewriteRule ^ %1 [L,R=301]
+
+#removing extensions
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [NC,L]
+
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /var/www/petizens.xyz/html/admin/.htpasswd
+require valid-user

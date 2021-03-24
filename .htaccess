@@ -1,0 +1,86 @@
+Options -MultiViews -Indexes
+
+ErrorDocument 403 /error
+ErrorDocument 404 /error
+ErrorDocument 502 /error
+
+Header Set Access-Control-Allow-Origin *
+Header Set Access-Control-Allow-Origin https://petizens.xyz/imgpost/
+Header Set Access-Control-Allow-Origin https://petizens.xyz/
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} ^(?!\/api\/)(.+)\/$
+RewriteRule ^ %1 [L,R=301]
+
+RewriteRule ^article/([0-9a-zA-Z_-]+)/([0-9]+)/([0-9a-zA-Z_-]+)$ article.php?cate=$1&artid=$2&title=$3
+RewriteRule ^user/([0-9a-zA-Z_-]+)/articles$ usersarticles.php?user=$1
+RewriteRule ^user/([0-9a-zA-Z_-]+)/posts$ usersposts.php?user=$1
+RewriteRule ^user/([0-9a-zA-Z_-]+)$ user.php?user=$1
+RewriteRule ^animals/([0-9a-zA-Z_-]+)$ animals-page.php?category=$1
+RewriteRule ^animals/([0-9a-zA-Z_-]+)/all-articles$ allarticles.php?category=$1
+RewriteRule ^animals/([0-9a-zA-Z_-]+)/all-breeds$ allbreeds.php?category=$1
+RewriteRule ^edit-caption/([0-9a-zA-Z_-]+)/([0-9]+)$ edit-post.php?uname=$1&phid=$2
+RewriteRule ^edit-cpost/([0-9a-zA-Z_-]+)/([0-9]+)$ edit-cpost.php?uname=$1&cpostid=$2
+RewriteRule ^delete-picture/([0-9a-zA-Z_-]+)/([0-9]+)$ includes/deletecaption.inc.php?uname=$1&phid=$2
+RewriteRule ^delete-cpost/([0-9a-zA-Z_-]+)/([0-9]+)$ includes/deletecpost.inc.php?uname=$1&cpostid=$2
+RewriteRule ^delete-comment/([0-9]+)$ includes/deletecomment.inc.php?cid=$1
+RewriteRule ^locations/map/([0-9a-zA-Z_-]+)$ locations-map.php?locid=$1
+RewriteRule ^locations/([0-9a-zA-Z_-]+)$ locations.php?locid=$1
+RewriteRule ^community/([0-9a-zA-Z_-]+)$ community.php?usrid=$1
+RewriteRule ^community-post/([0-9]+)$ cpostbox.php?id=$1
+RewriteRule ^delcposcomm/([0-9]+)$ includes/deletecpostcomment.inc.php?cid=$1
+
+RewriteRule ^users$ resourcesusers.php
+
+RewriteRule ^locations/map$ locations-map.php
+
+RewriteRule ^animal/all-articles$ allarticlesall.php
+
+RewriteRule ^imgpost/([0-9]+)$ ajaxpopup.php?id=$1
+
+RewriteRule ^edituserdetailsconfirmed$ includes/edituserdetails.inc.php
+
+RewriteRule ^userlogin$ user-registration.php
+
+RewriteRule ^createimgcpost$ createimagecpost.php
+
+RewriteRule ^createtxtcpost$ createtextcpost.php
+
+RewriteRule ^pawchat$ message.php
+
+RewriteRule ^edit-details$ user-edit.php
+
+RewriteRule ^create$ create-post.php
+
+RewriteRule ^add-breed$ create-breed.php
+
+RewriteRule ^logout$ includes/logout.inc.php
+
+RewriteRule ^verify$ includes/emailverify.inc.php
+
+#RewriteRule ^animals/cats cats.php
+#RewriteRule ^animals/dogs dogs.php
+#RewriteRule ^animals/birds birds.php
+#RewriteRule ^animals/fishes fishes.php
+#RewriteRule ^animals/rodents rodents.php
+#RewriteRule ^animals/exotic-pets exotic-pets.php
+#RewriteRule ^animals/others others.php
+#Enable them once complete:
+    #RewriteRule ^animals/cats cats.php
+    #RewriteRule ^animals/cats cats.php
+    #RewriteRule ^animals/cats cats.php
+    #RewriteRule ^animals/cats cats.php
+    #RewriteRule ^animals/cats cats.php
+    #RewriteRule ^animals/cats cats.php
+
+
+#removing extensions
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*?)/?$ $1.html [NC,L]

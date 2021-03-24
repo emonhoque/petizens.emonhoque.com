@@ -1,0 +1,588 @@
+html,
+body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+
+.main-content {
+  min-height: 70vh;
+  max-width: 1250px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.content {
+  margin-top: 2%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.petlogo {
+  width: 250px;
+}
+
+.admintable {
+  margin: 50px 10%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admintablemain {
+  width: 70%;
+  background-color: #5f5f5f;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.admintable img,
+.admintable img {
+  width: 50%;
+  max-width: 150px;
+  min-width: 75px;
+  border-radius: 150px;
+}
+
+.admintable img:hover,
+.admintable img:hover {
+  background-color: #5cff9b;
+  border-radius: 150px;
+}
+
+.cfresults {
+  margin: 20px 1%;
+  height: 80vh;
+  display: inline-block;
+  color: black;
+  background-color: #dfdfdf;
+  height: auto;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cfresultstable {
+  border-radius: 10px;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.cfresultreply {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 10px;
+  margin: 0% 20% 0% 20%;
+  padding: 5px;
+}
+
+.cfresultreply:hover {
+  background-color: rgb(51, 57, 139);
+}
+
+.cfresultreply a:link,
+.cfresultreply a:visited,
+.cfresultreply a:hover,
+.cfresultreply a:active {
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+}
+
+.cfresultreplyred {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 1.5em;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 10px;
+  margin: 0% 20% 0% 20%;
+  padding: 5px;
+}
+
+.cfresultreplyred:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.cfresultreplyred a:link,
+.cfresultreplyred a:visited,
+.cfresultreplyred a:hover,
+.cfresultreplyred a:active {
+  color: rgb(190, 190, 190);
+  text-decoration: none;
+}
+
+.nlsubs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.nlsubstable {
+  background-color: #dfdfdf;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.nlsubstable th {
+  width: 200px;
+}
+
+.searchloc {
+  font-size: 16px;
+  border-radius: 30px;
+  min-width: 160px;
+  text-align: center;
+  width: 160px;
+}
+
+.edit {
+  color: Red;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.addarticlediv {
+  background-color: #4b4646;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.tapadding {
+  display: flex;
+  justify-content: center;
+}
+
+.addarticlediv input {
+  max-width: 300px;
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: rgb(224, 223, 223);
+  font-weight: bold;
+}
+
+.addarticlediv select {
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  text-align-last: center;
+  margin-bottom: 15px;
+  background-color: rgb(224, 223, 223);
+  font-weight: bold;
+  font-size: medium;
+}
+
+.addarticlediv select option {
+  text-align: center;
+  text-align-last: center;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.addarticlediv textarea {
+  max-width: 400px;
+  justify-content: center;
+  height: 60vh;
+  padding: 12px 20px;
+
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: rgb(224, 223, 223);
+  resize: none;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.addarticlediv .btn {
+  background-color: #93dbab;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 30px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  opacity: 0.8;
+  width: 200px;
+}
+
+.addarticlediv .btn:hover {
+  background-color: #93dbab;
+  color: black;
+  opacity: 1;
+}
+
+.listarticlesdiv {
+  border-radius: 10px;
+  padding-bottom: 10px;
+  margin: 20px auto;
+}
+
+.listarticlesdiv h1 {
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+}
+
+.au-2 {
+  padding-bottom: 10px;
+  padding-top: 20px;
+  margin: 20px auto;
+}
+
+.auh-2 {
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  color: #dfdfdf;
+}
+
+.view-art,
+.link-art,
+.edit-art,
+.delete-art {
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.last3cells {
+  max-width: 50px;
+}
+
+.view-art {
+  color: rgb(11, 0, 163);
+}
+
+.link-art {
+  color: rgb(163, 106, 0);
+}
+
+.edit-art {
+  color: rgb(2, 100, 2);
+}
+
+.delete-art {
+  color: rgb(161, 0, 0);
+}
+
+.view-art:hover,
+.link-art:hover,
+.edit-art:hover,
+.delete-art:hover {
+  color: #4b4646;
+}
+
+.listarticles {
+  background-color: #dfdfdf;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+.scrollll {
+  overflow-x: auto;
+}
+
+.catetable {
+  margin: 10px 10%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  background-color: #5f5f5f;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.catetableinlineblock {
+  display: inline-block;
+  max-width: 600px;
+  width: auto;
+}
+
+.categoriesdiv {
+  display: inline-table;
+}
+
+.catetable img,
+.catetable img {
+  width: 80%;
+  max-width: 150px;
+  min-width: 75px;
+  border-radius: 150px;
+}
+
+.catetable img:hover,
+.catetable img:hover {
+  background-color: #5cff9b;
+  border-radius: 150px;
+}
+
+.imgupload {
+  background-color: #93dbab;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 15px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  opacity: 0.8;
+  width: 200px;
+}
+
+.fileupload {
+  background-color: darkgreen;
+  border: none;
+  color: white;
+  padding: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px;
+  opacity: 0.8;
+  width: 400px;
+}
+
+.imgupload:hover {
+  background-color: #93dbab;
+  color: black;
+  opacity: 1;
+}
+
+.backtoadminpanel {
+  text-align: center;
+  background-color: #93dbab;
+  color: #000;
+  margin: 100px 40%;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.backtoadminpanel:hover {
+  background-color: mintcream;
+}
+
+.backtoadminpanel2 {
+  text-align: center;
+  background-color: #93dbab;
+  color: #000;
+  margin: 20px 40%;
+  padding: 10px;
+  border-radius: 40px;
+}
+
+.backtoadminpanel2:hover {
+  background-color: mintcream;
+}
+
+.galleryimgtable {
+  background-color: #b3b3b3;
+  color: #000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  display: inline-flex;
+  table-layout: fixed;
+}
+
+.galleryimgdiv {
+  margin: auto;
+}
+
+.lastgallerycell {
+  width: 300px;
+  margin-right: 30px;
+}
+
+.delete-gallery-a {
+  color: rgb(161, 0, 0);
+  padding-right: 5px;
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.delete-gallery-a:hover {
+  color: #4b4646;
+}
+
+.editcatediv {
+  margin: 20px;
+}
+
+.editcatediv select {
+  max-width: 200px;
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  text-align: center;
+  text-align-last: center;
+  margin-bottom: 15px;
+  background-color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: medium;
+}
+
+.editcatediv select option {
+  text-align: center;
+  text-align-last: center;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.editcatediv textarea {
+  width: 600px;
+  height: 300px;
+}
+
+.edit-cateform {
+  background-color: #dfdfdf;
+  padding: 20px;
+  width: 700px;
+  display: inline-block;
+  justify-content: center;
+  color: black;
+  border-radius: 10px;
+}
+
+.btncateedit {
+  text-align: center;
+  background-color: #93dbab;
+  color: #000;
+  padding: 10px;
+  border-radius: 40px;
+  width: 100px;
+}
+
+.btncateedit:hover {
+  background-color: mintcream;
+}
+
+.adminimginadmintable {
+  height: 100px;
+  width: 100px;
+}
+
+.postapprovalflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.approvaltable {
+  background-color: #dfdfdf;
+  color: #000;
+  padding: 20px;
+  width: 100%;
+}
+
+.approvalbuttons {
+  padding: 10px;
+  width: 110px;
+}
+
+.approvalbuttonsapprove {
+  background-color: rgb(3, 216, 3);
+}
+
+.approvalbuttonsapprove:hover {
+  background-color: rgb(2, 109, 2);
+  color: #dfdfdf;
+}
+
+.approvalbuttonsdeny {
+  background-color: rgb(218, 0, 0);
+}
+
+.approvalbuttonsdeny:hover {
+  background-color: rgb(138, 3, 3);
+  color: #dfdfdf;
+}
+
+.allllllldone {
+  background-color: #000;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.listarticles {
+  border-collapse: collapse;
+}
+
+.listarticles td {
+  border-top: 2px solid #fff;
+}
+.listarticles tr td {
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  padding: 7px;
+}
+
+.backtoadminpanel a,
+.backtoadminpanel2 a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .addarticlediv {
+    margin: 5px;
+  }
+  .listarticlesdiv {
+    margin: 5px;
+  }
+
+  .auh-2 {
+    font-size: large;
+    padding: 5px;
+  }
+
+  .au-2 {
+    padding-bottom: 10px;
+  }
+  .content p {
+    font-size: 15px !important;
+    font-weight: 500;
+  }
+}
