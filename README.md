@@ -1,5 +1,6 @@
-# petizens.xyz
+# petizens.emonhoque.com
 Petizens: An Online Animal Community Based in Malaysia! This was a final year project for my B.Sc. (Hons) in Computing Degree. 
+The website is currently active <a title="Petizens" href="https://petizens.emonhoque.com" target="_blank" rel="noopener">here</a>. 
 
 ### Scope for the project
 This web application will serve as a guide to people who are starting their journey as a pet owner, answering general questions or complex questions they might have about different things and also help older pet owners, who would like to learn more about their pets. This particular version is web based.
