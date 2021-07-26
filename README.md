@@ -1,5 +1,5 @@
 # petizens.emonhoque.com
-Petizens: An Online Animal Community Based in Malaysia! This was a final year project for my B.Sc. (Hons) in Computing Degree. 
+Petizens: An Online Animal Community Based in Malaysia! This was a final year project for my B.Sc. (Hons) in Computing Degree. <br>
 The website is currently active <a title="Petizens" href="https://petizens.emonhoque.com" target="_blank" rel="noopener">here</a>. 
 
 ### Scope for the project
