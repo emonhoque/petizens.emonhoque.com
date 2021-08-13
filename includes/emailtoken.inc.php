@@ -13,7 +13,7 @@ mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 // Create the Transport
 $transport = (new Swift_SmtpTransport('smtp.gmail.com', 465, 'ssl'))
   ->setUsername('mypetizens@gmail.com')
-  ->setPassword('k7yJSwO0va2kHUxntZza');
+  ->setPassword('');
 
 // Create the Mailer using your created Transport
 $mailer = new Swift_Mailer($transport);
